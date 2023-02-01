@@ -10,6 +10,8 @@
     <!-- Etiqueta form de formulario -->
     <form>
         <!-- Label es una etquita-->
+        <!-- Para la etiqueta label, existen atributos opcionales 
+        como el for: el id del input al que compaña la etiqueta -->
         <label>Nombre</label> <!-- Para que se paresca a un formulario agregamos los inputs -->
         <input type="text" name="nombre" placeholder="Ingrese su Nombre"/>
         <!-- El atributo placeholder es para ayudar a los usuarios que interactuan con el form -->
@@ -21,6 +23,11 @@
         <!-- En el atributo name si usamo el metodo get, se mostraran las variables que enviamos al completar el formulario -->
         <input type="password" name="password" placeholder="Ingrese su Contraseña">
         <input type="submit" value="Enviar">
+        <!-- El elemento tipo input tiene atributos opcionales como, 
+        name: el nombre que tendra el input
+        value: valor que tiene el input
+        type: tipo de input (text|checkbox|number|password|radio|e-mail)
+        disabled: inhabilitado para escribir-->
     </form>
 </body>
 </html>
