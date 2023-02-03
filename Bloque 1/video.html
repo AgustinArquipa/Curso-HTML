@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML</title>
+</head>
+<body>
+    <!--Los elementos Multimedia vienen en diversos formatos. Pueden ser casi cualquier cosa que se pueda
+    escuchar o ver, como imagenes, musica, sonido, videos, discos, peliculas, animaciones y mas
+
+    Las paginas webs suelen contener elementos multimedia de diferentes tipos y formatos -->
+    <h1>Apuntes</h1>
+    <p>El atributo <strong>CONTROLS</strong> le permitira al usuario reproducir, pausar y 
+    ajustar el volumen del video.</p>
+    <p>Es una buena idea incluir <strong>los atributos Widht y Height</strong>, ya que si no se hace
+    existe la posibilidad de que el video se pause.</p>
+    <p>EL atributo <strong>AUTOPLAY</strong> funciona para que el video empiece automaticamente.</p>
+    <p>Añadir <strong>muted</strong> despues de <strong>autoplay</strong> hara que el video comience automaticamente 
+    pero muteado</p>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+        Your Browser does not support the video tag.
+    </video>
+</body>
+</html>
