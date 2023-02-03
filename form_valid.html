@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion de Formularios</title>
+</head>
+<body>
+    <!--Este tipo de validacion de datos solo funcionara para validar inputs
+    Deberiamos encontrar la manera de validar checkboxes, etc -->
+    <form method="post" action="#">
+        <label for="numeros">Numeros</label>
+        <!--Los atributos required y pattern son para que el campo sea necesario completar y pattern valida los numeros
+        maxlength y  minlength sirven para determinar el minimo y maxima cantidad de combinacion -->
+        <input type="number" name="numeros" required maxlength="10" minlength="4">
+        <label for="letras">Letras</label>
+        <input type="text" name="letras" required pattern="[a-zA-Z]+">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
