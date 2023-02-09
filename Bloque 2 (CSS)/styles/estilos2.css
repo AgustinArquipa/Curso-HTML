@@ -1,0 +1,32 @@
+/* Aprendiendo sobre margin, border, padding y content */
+/* Primer Ejemplo */
+
+h1 {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 30px;
+    font-weight: bold;
+    color: grey;
+}
+
+/* Podemos chusmear modelos de cajas en w3schools y developer mozilla */
+/*Podemos customizar los lados del padding, etc*/
+h2 {
+    border: 1px solid salmon;
+    /*padding: 5px;*/
+    padding: 30px 15px 25px 20px;
+    /* estos valores de pading usando el top y eso, tengo que acordarme del sentido horario, top, right, bottom, lef */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
