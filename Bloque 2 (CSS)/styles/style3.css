@@ -1,0 +1,62 @@
+/* Con el asterisco aplico una propiedad para todos los elementos, actua como comodin y selecion _
+a todos los elementos que aparescan en nuestro html
+OJO!! CSS es una hoja de estilo en cascada */
+
+* {
+    color: blue;
+    font-family: 'Roboto', sans-serif;
+}
+/* Una manera de Centrar 
+#alignen {
+    width: 1024px;
+    margin-left: 35%;
+} Ahora la manera mas recomendada */
+#alignen {
+    width: 400px;
+    margin: 0 auto;
+} 
+/* Asi se comparte propiedades en CSS con otros elementos */
+p, span {
+    color: red;
+    width: 300px;
+}
+
+h1 {
+    border: 1px solid salmon;
+    /*padding: 5px;*/
+    padding: 30px 15px 25px 20px;
+    /* estos valores de pading usando el top y eso, tengo que acordarme del sentido horario, top, right, bottom, lef */
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 20px;
+    margin: 20px;
+}
+/* Asi conecto mi prop a un elemento en especifico */
+
+#mi_parrafo {
+    color: blueviolet;
+    font-size: 23px;
+    border: 1px solid brown;
+}
+/* Definiendo mi clase */
+.estaesmiclase {
+    font-weight: bold;
+    color: chocolate;
+    text-align: right;
+}
+/* Si queremos trabajar con una regla donde todos los elementos que estan en el section sigan alguna propiedad hacemos: */
+section h1 {
+    font-weight: 1000;
+}
+/* Estamos indicando que todos los h1 del section sigan esta prop */
+
+/* Asi incluimos el tipo de tipografia, definiendo en cada elements el font-family*/
