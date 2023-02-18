@@ -1,0 +1,36 @@
+.accordion {
+    background-color: #f2f2f2;
+    width: 80%;
+    padding: 1.5em;
+    margin: 60px auto;
+    max-width: 500px;
+    box-shadow: 0 0 18px -1px rgb(0, 0, 0, .5);
+    border-radius: 6px;
+    border-left: 4px solid #853bf4;
+}
+
+input {
+    display: none;
+}
+
+.accordion_link {
+    display: inline-block;
+    color: #853bf4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.accordion_class {
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition: .3s grid-template-rows;
+}
+
+p {
+    overflow: hidden;
+}
+
+.accordion:has(:checked){
+    --rows: 1fr;
+}
