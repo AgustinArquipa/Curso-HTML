@@ -1,0 +1,32 @@
+/* Dandole un color para que se destaque el parrafo*/
+* {
+    text-align: center;
+    align-items: center;
+}
+
+.destacado {
+    color: red;
+}
+
+p {
+    font-family: cursive;
+    font: 14px;
+    color: #ccc;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+/* Vocabulario para decir contenido destacado = outstading */
+#outstanding {
+    color: white;
+    background-color: black;
+}
+
+#boton {
+    text-decoration: none;
+    background-color: #ccc;
+    color: #fff;
+    width: 100px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
