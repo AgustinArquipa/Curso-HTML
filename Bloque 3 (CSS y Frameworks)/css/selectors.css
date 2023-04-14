@@ -1,0 +1,13 @@
+/* Podemos aplicar estilos a varios selectores identificandos y creando clases ejemplos: */
+p.center {
+    text-align: center;
+    color: red;
+} 
+p.large {
+    font-size: 150%;
+}
+/* Una manera de simplifica codigo */
+h2, h3, div {
+    text-align: center;
+    color: red;
+}

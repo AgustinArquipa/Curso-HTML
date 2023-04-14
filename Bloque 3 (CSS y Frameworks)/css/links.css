@@ -1,0 +1,27 @@
+/* Manera de aplicar efectos a los enlaces, o a la etiqueta a*/
+/* a:link = Enlace no visitado, enlace normal 
+a:visited = un enlace que el usuario ha visitado
+a:hover = un enlace cuando el usario pasa el mouse
+a:active = un enlace en el momento en el que se haga click */
+* {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: gray;
+}
+a:active {
+    color: white;
+}
