@@ -1,0 +1,4 @@
+/* Selector hermano adyacente + */
+div + p {
+    background-color: plum;
+}

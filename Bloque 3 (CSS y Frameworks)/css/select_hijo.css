@@ -1,0 +1,4 @@
+/* Selector Hijo > */
+div > p {
+    background-color: lightseagreen;
+}
