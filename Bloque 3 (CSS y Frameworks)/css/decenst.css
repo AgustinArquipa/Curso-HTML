@@ -1,0 +1,4 @@
+/* Selectores decendientes */
+div p em {
+    background-color: orange;
+}
