@@ -1,0 +1,9 @@
+/* Para representar selectores generales usamos el ~ 
+Estos se utilizan para los elementos que aparecen despues de un elemento, incluso si no son adyacentes */
+h1 ~ p {
+    font-family:Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: crimson;
+    color: #fff;
+    padding: .5em;
+}
