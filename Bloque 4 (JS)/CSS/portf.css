@@ -22,6 +22,10 @@ body {
     --color1: #007bff;
     --color2: rgb(0, 255, 255);
     --color3: #202429;
+    --fb: #3b5999;
+    --ins: #e4405f;
+    --git: #171515;
+    --link: #0077B5;
 }
 .box_head {
     background-color: var(--bg);
@@ -202,7 +206,78 @@ img {
 }
 
 /* Creamos la caja para la parte del github */
+/* Para el pie de pagina */
+
+footer {
+    height: auto;
+    margin: 0 -1em 0 18em;
+    color: #fff;
+}
 
 .container_git {
-    margin: 0 0 0 20em;
+    box-sizing: border-box;
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container_git p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* Para que los li se alinien en una linea */
+
+.container_git ul {
+    display: inline-block;
+}
+
+.container_git ul li {
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.container_git ul li a {
+    display: block;
+    padding: 0 10px;
+    background: var(--mainColor);
+    color: #fff;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0px rgba(0, 0, 0, .2);
+    transition: .2s;
+}
+
+.container_git ul:hover a {
+    filter: blur(2px);
+}
+
+.container_git ul li a:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.container_git ul li .facebook:hover {
+    background: var(--fb);
+}
+
+.container_git ul li .instagram:hover {
+    background: var(--ins);
+}
+
+.container_git ul li .linkedin:hover {
+    background: var(--link);
+}
+
+.container_git ul li .github:hover {
+    background: var(--git);
 }
