@@ -26,6 +26,7 @@ body {
     --ins: #e4405f;
     --git: #171515;
     --link: #0077B5;
+    --spoti: #81b71a;
 }
 .box_head {
     background-color: var(--bg);
@@ -280,4 +281,8 @@ footer {
 
 .container_git ul li .github:hover {
     background: var(--git);
+}
+
+.container_git ul li .spotify:hover {
+    background: var(--spoti);
 }
