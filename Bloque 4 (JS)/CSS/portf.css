@@ -28,11 +28,13 @@ body {
     --link: #0077B5;
     --spoti: #81b71a;
 }
+
 .box_head {
     background-color: var(--bg);
     padding: 2rem;
     height: calc(15vh - 3rem);
     display: grid;
+    box-sizing: content-box;
 }
 
 /* Creamos el borde para esa caja */
