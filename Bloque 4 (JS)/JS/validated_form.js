@@ -13,3 +13,6 @@ function validar(){
 };
 
 form.addEventListener('submit', validar)
+
+//Aca hacemos la funcion para abrir el menu
+const toggleMenu = () => document.body.classList.toggle("open");

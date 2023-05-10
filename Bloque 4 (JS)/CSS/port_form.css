@@ -2,9 +2,11 @@
 
 /* Creamos una caja para el titulo y la imagen con colores degradados*/
 
+
 body {
     font-family: 'Poppins', sans-serif;
     height: 100%;
+    background: var(--bg);
 }
 
 :root {
@@ -27,7 +29,35 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    translate: -100% 0;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: translate, opacity, visibility;
+    transition-duration: 0.5s;
 } 
+
+body.open .sidebar-wrapper {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 0;
+}
+
+@media (width >= 1000px) {
+    .sidebar-wrapper {
+        translate: 0 0;
+        text-align: center;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--mainColor);
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 .sidebar-wrapper .sidebar {
     width: 100%;
@@ -104,8 +134,16 @@ body {
     line-height: 1.6;
     max-width: 1170px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
     padding: 1.5rem;
+}
+
+@media (width >= 1000px) {
+    .content {
+        margin-left: 18rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
 }
 
 .content ul {
@@ -211,4 +249,31 @@ body {
     .contact-info p {
         text-align: center;
     }
+}
+
+.burger {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 72px;
+}
+
+@media (width >= 1000px) {
+    .burger {
+        visibility: hidden;
+    }
+}
+
+button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 72px;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: #585c62;
+    cursor: pointer;
 }

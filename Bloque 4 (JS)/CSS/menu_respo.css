@@ -49,7 +49,7 @@ button {
     transition-duration: 0.5s;
 }
 
-body .open .navbar {
+body.open .navbar {
     opacity: 1;
     visibility: visible;
     translate: 0 0;
