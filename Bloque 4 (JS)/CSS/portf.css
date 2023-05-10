@@ -3,11 +3,11 @@
 
 * {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Para cambiar el color del fondo */
 body {
-    font-family: 'Poppins', sans-serif;
     background: linear-gradient(rgb(247, 247, 247), pink);
     height: 100%;
 }
@@ -42,10 +42,10 @@ body {
     background: linear-gradient(100deg, var(--violet) 25%, var(--turquoise) 50%, var(--violet) 75%);
     background-repeat: repeat;
     padding: 8px;
-    margin: 1rem 0 0 300px;
     border-radius: 10px;
     animation: gradient 5s linear infinite;
 }
+
 
 @keyframes gradient {
     0% {
@@ -61,10 +61,20 @@ body {
 
 .box_head h1 {
     color: #fff;
-    margin: 0;
-    font-size: 3rem;
+    margin: auto;
+    font-size: 2rem;
     text-align: center;
     background-color: var(--bg);
+}
+
+@media (width >1000px) {
+    .gradient-border-box {
+        margin: 1rem 0 0 300px;
+    }
+
+    .box_head h1 {
+        font-size: 3rem;
+    }
 }
 
 /* Aqui termina la historia de la cabecera con estilo */
@@ -80,7 +90,6 @@ ul {
 
 .container_img {
     outline: 4px solid #fff;
-    margin: 0 1em 0 20em;
     display: grid;
     grid-template-columns: repeat(6, 2fr);
     grid-template-rows: repeat(2, 1fr);
@@ -90,6 +99,12 @@ ul {
     gap: 10px;
     background: #fff;
     box-shadow: 0 0 18px 0 rgb(0, 0, 0);
+}
+
+@media (width >= 1000px) {
+    .container_img {
+        margin: 0 1em 0 20em;
+    }
 }
 
 .item {
@@ -123,15 +138,70 @@ img {
     width: 100%;
 }
 /* Creamos el menu responsivo */
+.burger {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 72px;
+}
+
+@media (width >= 1000px) {
+    .burger {
+        visibility: hidden;
+    }
+}
+
+button {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 72px;
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: #585c62;
+    cursor: pointer;
+}
+
 .sidebar-wrapper {
+    text-align: center;
     max-width: 300px;
-    min-width: 300px;
     height: 100vh;
     background-color: var(--mainColor);
     position: fixed;
     top: 0;
     left: 0;
+    translate: -100% 0;
+    display: flex;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition-property: translate, opacity, visibility;
+    transition-duration: 0.5s;
 } 
+
+body.open .sidebar-wrapper {
+    opacity: 1;
+    visibility: visible;
+    translate: 0 0;
+}
+
+@media (width >= 1000px){
+    .sidebar-wrapper {
+        translate: 0 0;
+        text-align: center;
+        max-width: 300px;
+        height: 100vh;
+        background-color: var(--mainColor);
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+}
 
 .sidebar-wrapper .sidebar {
     width: 100%;
@@ -205,7 +275,13 @@ img {
 /* Creamos los estilos para la informacion Personal */
 
 .container_pers {
-    margin: 0 0 0 20em;
+    margin: auto;
+}
+
+@media (width >= 1000px){
+    .container_pers {
+        margin: 0 0 0 20em;
+    }
 }
 
 /* Creamos la caja para la parte del github */
@@ -213,8 +289,13 @@ img {
 
 footer {
     height: auto;
-    margin: 0 -1em 0 18em;
     color: #fff;
+}
+
+@media (width >= 1000px) {
+    footer {
+        margin: 0 -1em 0 18em;
+    }
 }
 
 .container_git {

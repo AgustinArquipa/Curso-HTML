@@ -231,7 +231,7 @@ body.open .sidebar-wrapper {
 }
 
 /* Largo de pantalla */ 
-@media (min-width: 700px){
+@media (min-width: 1050px){
     body {
         padding: 0 4em;
     }
