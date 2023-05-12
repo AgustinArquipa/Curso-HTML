@@ -3,6 +3,7 @@ const form = document.getElementById('formulario');
 
 
 form.addEventListener('submit', e => {
+    //el e.preventDefault sirve para pausar la pagina o algo asi
     e.preventDefault();
     validar();
 });
@@ -23,7 +24,7 @@ function validar(){
     //Si en corchetes pone 2, 4 evualuamos aquellos correos con terminacion .info, etc
     //Validando el nombre
     if(nameValue.value.length == '' ){
-        warinigs += "No podes dejar el nombre vacio!";
+        warinigs += "Nombre vacio!";
         //alert(warinigs);
         setErrorFor(nameValue, warinigs);
     }else {
@@ -39,11 +40,17 @@ function validar(){
         setSuccesFor(email);
     }
     //Validamos el telefono
-
+    if(!isValidNumber(phone.value)){
+        warinigs = '';
+        warinigs += "Telefono invalido"
+        setErrorFor(phone, warinigs);
+    }else {
+        setSuccesFor(phone);
+    }
     //Validamos el asunto
     if(affair.value == ''){
         warinigs = ''
-        warinigs += 'El asunto no puede esta vacio!'
+        warinigs += 'El asunto esta vacio!'
         setErrorFor(affair, warinigs);
     }else {
         setSuccesFor(affair)
@@ -72,4 +79,8 @@ function setErrorFor(input, message){
 function setSuccesFor(input){
     const formControl = input.parentElement;
     formControl.className = 'contact-form succes'
+}
+
+function isValidNumber(numValue){
+    return /^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/.test(numValue);
 }
