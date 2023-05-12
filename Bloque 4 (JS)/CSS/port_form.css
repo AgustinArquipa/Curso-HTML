@@ -193,6 +193,33 @@ body.open .sidebar-wrapper {
     border-bottom: 1px solid #d63031;
 }
 
+/* Para la parte del control de error y validacion de la misma */
+
+.contact-form i {
+    visibility: hidden;
+}
+
+.contact-form small {
+    color: #e74c3c;
+    visibility: hidden;
+}
+
+.contact-form.error i.fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.contact-form.succes i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.contact-form.error small {
+    visibility: visible;
+}
+
+/* Para la parte del input check */ 
+
 .contact-form form input[type="reset"],
 .contact-form form input[type="submit"] {
     display: inline-block;
@@ -218,6 +245,7 @@ body.open .sidebar-wrapper {
     transition: background-color 1s ease-out;
     outline: 0;
 }
+
 
 .contact-info {
     background: var(--bg);
