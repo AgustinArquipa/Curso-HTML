@@ -287,6 +287,19 @@ body.open .sidebar-wrapper {
 /* Creamos la caja para la parte del github */
 /* Para el pie de pagina */
 
+.container_grn {
+    display: contents;
+    /* Y aca modificamos el justify-content, nowarp y en forma de columna */
+}
+
+@media (width <= 1000px){
+    .container_grn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  
+    }
+}
+
 footer {
     height: auto;
     color: #fff;
@@ -320,6 +333,7 @@ footer {
 .container_git ul {
     display: inline-block;
 }
+
 
 .container_git ul li {
     display: inline-block;

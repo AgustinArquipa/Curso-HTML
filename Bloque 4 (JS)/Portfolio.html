@@ -26,6 +26,8 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
 </head>
 <body>
+    <!--Pensamos en un div, que tenga una clase container donde modificamfos el flex y 
+        le damos margin para que no termine en el borde del texto-->
     <button onclick="toggleMenu()" class="burger material-symbols-outlined">
         Menu
     </button>
@@ -47,11 +49,14 @@
             </nav>
         </div> 
     </div>
-    <div class="gradient-border-box">
-        <div class="box_head">
-            <h1>Portfolio</h1>
+    <div class="container_grn">
+        <div class="gradient-border-box">
+            <div class="box_head">
+                <h1>Portfolio</h1>
+            </div>
         </div>
     </div>
+    
     <br>
     <div class="container_pers" id="InformacionPers">
         <h2>Información Personal</h2>
@@ -83,51 +88,54 @@
             <li>Fotografiar Paisajes</li>
         </ul> <br>
         <h3>Organización de mi semana</h3>
-        <table class="table table-hover table-bordered border-dark">
-            <tr>
-                <th colspan="6">Días</th>
-            </tr>
-            <tr>
-                <th>Horas</th>
-                <td>Lunes</td>
-                <td>Martes</td>
-                <td>Míercoles</td>
-                <td>Jueves</td>
-                <td>Viernes</td>
-            </tr>
-            <tr>
-                <th>8AM a</th>
-                <td colspan="6" rowspan="2">Lo primero que hago es desayunar, luego termino de ordenar mi cuarto y para finalizar empiezo con tareas
-                    pendientes que quedaron de la facultdad.
-                </td>
-            </tr>
-            <tr>
-                <th>10AM</th>
-            </tr>
-            <tr>
-                <th>10AM - 13PM</th>
-                <td>Termino de hacer mis tareas, me baño y almuerzo preparandome para comenzar las clases</td>
-                <td>Generalmente hago lo mismo que el lunes, salvo que cocino ya que mi horarios de clases son diferentes</td>
-                <td>Misma Rutina que el Lunes</td>
-                <td colspan="2">Cocino ya que mi horarios de clases son diferentes</td>
-            </tr>
-            <tr>
-                <th>13PM - 19PM</th>
-                <td>Me acomodó para salir a tomar el colectivo y preparar mis clases</td>
-                <td>Como comun a las 15 empiezan mis clases y antes trato de adelantar temas para las prox clases.</td>
-                <td>Repito rutina del Lunes</td>
-                <td>Este dia es particular, ya que no tengo clases, en el cual sobre esta horas me dedico a tratar de estar al día con todas las materias</td>
-                <td>A las 13 tengo que llevar a mi mamá a trabajar y luego de eso termino saliendo para tomar mis clases. </td>
-            </tr>
-            <tr>
-                <th>19PM - 21PM</th>
-                <td colspan="6">Sobre estas horas me dedico hacer algo que me guste ami y me distraiga, ya sea salir a caminar con mi perro, andar en moto, etc</td>
-            </tr>
-            <tr>
-                <th>21PM - 23PM</th>
-                <td colspan="6">Trato de irme a bañar temprano para terminar mi día diario y al final irme a acostar.</td>
-            </tr>
-        </table> <br>
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered border-dark">
+                <tr>
+                    <th colspan="6">Días</th>
+                </tr>
+                <tr>
+                    <th>Horas</th>
+                    <td>Lunes</td>
+                    <td>Martes</td>
+                    <td>Míercoles</td>
+                    <td>Jueves</td>
+                    <td>Viernes</td>
+                </tr>
+                <tr>
+                    <th>8AM a</th>
+                    <td colspan="6" rowspan="2">Lo primero que hago es desayunar, luego termino de ordenar mi cuarto y para finalizar empiezo con tareas
+                        pendientes que quedaron de la facultdad.
+                    </td>
+                </tr>
+                <tr>
+                    <th>10AM</th>
+                </tr>
+                <tr>
+                    <th>10AM - 13PM</th>
+                    <td>Termino de hacer mis tareas, me baño y almuerzo preparandome para comenzar las clases</td>
+                    <td>Generalmente hago lo mismo que el lunes, salvo que cocino ya que mi horarios de clases son diferentes</td>
+                    <td>Misma Rutina que el Lunes</td>
+                    <td colspan="2">Cocino ya que mi horarios de clases son diferentes</td>
+                </tr>
+                <tr>
+                    <th>13PM - 19PM</th>
+                    <td>Me acomodó para salir a tomar el colectivo y preparar mis clases</td>
+                    <td>Como comun a las 15 empiezan mis clases y antes trato de adelantar temas para las prox clases.</td>
+                    <td>Repito rutina del Lunes</td>
+                    <td>Este dia es particular, ya que no tengo clases, en el cual sobre esta horas me dedico a tratar de estar al día con todas las materias</td>
+                    <td>A las 13 tengo que llevar a mi mamá a trabajar y luego de eso termino saliendo para tomar mis clases. </td>
+                </tr>
+                <tr>
+                    <th>19PM - 21PM</th>
+                    <td colspan="6">Sobre estas horas me dedico hacer algo que me guste ami y me distraiga, ya sea salir a caminar con mi perro, andar en moto, etc</td>
+                </tr>
+                <tr>
+                    <th>21PM - 23PM</th>
+                    <td colspan="6">Trato de irme a bañar temprano para terminar mi día diario y al final irme a acostar.</td>
+                </tr>
+            </table>
+        </div>
+        <br>
         <span><b>Sobre mi Fín de Semana es complicado hablar...</b></span>
         <h3 id="Imagenes">Algunas Fotografias que realice</h3>
     </div>
