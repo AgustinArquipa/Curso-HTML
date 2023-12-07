@@ -1,0 +1,20 @@
+.text{
+    width: 100%;
+    padding: 20px;
+    justify-content: center; /*centrar el contenido*/
+    display: flex; /* q todos esten en la misma linea*/
+}
+
+ul{
+    display: flex; /*que esten en pos H*/
+}
+li{
+    list-style: none; /*saca los **/
+    font-size: 3em; /*tamaño*/
+    letter-spacing: 5px; /*espacio entre las letras*/
+    transition: 2s; /*tiempo en aparece y la defuminacion*/
+}
+li:hover{
+    filter: blur(70px);/*efecto de la difuminacion*/
+    /* opacity: 0; */
+}
