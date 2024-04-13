@@ -6,6 +6,10 @@ form.addEventListener('submit', e => {
     //el e.preventDefault sirve para pausar la pagina o algo asi
     e.preventDefault();
     validar();
+    if (form.querySelectorAll('.error').length === 0) {
+        form.submit(); // Envía el formulario si no hay errores de validación
+    };
+
 });
 
 function validar(){
