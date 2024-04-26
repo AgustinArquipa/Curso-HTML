@@ -1,0 +1,90 @@
+body {
+    background-color: white;
+    /* margin: 90px 300px 50px 300px;
+    /* cuando tenemos un margin definido asi, estamos modificando con 
+    90px para el margen superior (top)
+    300px para el margen derecho (right)
+    50px para el margen inferior (bottom)
+    300px para el margen izquierdo (left)
+    */
+    margin: auto;
+}
+
+/* Definimos la clase hijo del body */ 
+body > div {
+    outline: 4px solid black;
+    width: 95%;
+    height: 600px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    /* Aca definimos las areas, fijarse el funcionamiento */
+    grid-template-areas: 
+    "n1 n1 n1 n1 n2 n2 n2 n3 n3 n4 n4 n5"
+    "n1 n1 n1 n1 n2 n2 n2 n3 n3 n4 n4 n5"
+    "n1 n1 n1 n1 n6 n6 n7 n7 n7 n4 n4 n5"
+    "n8 n8 n8 n9 n6 n6 n7 n7 n7 n10 n10 n5"
+    "n8 n8 n8 n9 n6 n6 n7 n7 n7 n10 n10 n5"
+    "n11 n11 n11 n11 n11 n12 n12 n12 n12 n12 n12 n5";     
+    background: #464545;
+    box-shadow: 0 0 18px 0 rgb(0, 0, 0);
+}
+
+/* Definimos los elementos que van a ir en esta etiqueta div */
+.item {
+    font-size: 2rem;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* Con estas clases de items, se reconoce el area en CSS */
+.item1 {
+    background-color: crimson;
+    grid-area: n1;
+}
+.item2 {
+    background-color: dodgerblue;
+    grid-area: n2;
+}
+.item3 {
+    background-color: forestgreen;
+    grid-area: n3;
+}
+.item4 {
+    background-color: darkorchid;
+    grid-area: n4;
+}
+.item5 {
+    background-color: darkorange;
+    grid-area: n5;
+}
+.item6 {
+    background-color: lawngreen;
+    grid-area: n6;
+}
+.item7 {
+    background-color: deeppink;
+    grid-area: n7;
+}
+.item8 {
+    background-color: blueviolet;
+    grid-area: n8;
+}
+.item9 {
+    background-color: chocolate;
+    grid-area: n9;
+}
+.item10 {
+    background-color: blue;
+    grid-area: n10;
+}
+.item11 {
+    background-color: cyan;
+    grid-area: n11;
+}
+.item12 {
+    background-color: mediumseagreen;
+    grid-area: n12;
+}
