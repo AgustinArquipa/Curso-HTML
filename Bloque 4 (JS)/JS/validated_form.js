@@ -88,3 +88,15 @@ function setSuccesFor(input){
 function isValidNumber(numValue){
     return /^\(?(\d{3})\)?[-]?(\d{3})[-]?(\d{4})$/.test(numValue);
 }
+
+function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (email.value === ""){
+        alert("Input Email Vacio!");
+    }
+    else if (regex.test(email.value)){
+        alert("Email Valido!.")
+    } else {
+        alert("Email Invalido!.")
+    } 
+}
